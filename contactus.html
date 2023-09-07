@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
 </head>
+
 <body>
     <h1>Contact Us</h1>
     <p>
@@ -12,11 +14,18 @@
     </p>
 
     <form action="">
+       <fieldset>
+        <legend>Basic Information</legend>
         <!--Text Field Inputs -->
         <label for="firstname">First Name: </label>
-        <input  type="text"  id="firstname" name="firstname" value="" placeholder="enter your name">
-<br>
-<p>Choose your favorite language</p>
+        <input type="text" id="firstname" name="firstname" value="" placeholder="enter your First name" required>
+        <br>
+        <br>
+        <label for="lastname">Last Name: </label>
+        <input type="text" id="lastname" name="lastname" value="" placeholder="enter your Last name">
+        <br>
+        <!--radio type-->
+        <p>Choose your favorite language:</p>
         <input type="radio" id="english" name="fav-language" value="English">
         <label for="english">English</label>
         <br>
@@ -25,9 +34,70 @@
         <br>
         <input type="radio" id="spanish" name="fav-language" value="Spanish">
         <label for="spanish">Spanish</label>
+       </fieldset>
+        <br>
+        <!--New Session-->
+        <fieldset>
+            <legend>Personal details</legend>
+        <!--textarea-->
+        <p>Descripe your query:</p>
+        <textarea rows="10" cols="50" name="message" id="message">Type your query here</textarea>
+        <br>
+        <!--checkbox type-->
+        <p>What car brand do you own?</p>
+        <input type="checkbox" name="car1" id="car1" value="BMW">
+        <label for="car1">BMW</label>
+        <input type="checkbox" name="car2" id="car2" value="Mercedes">
+        <label for="car2">Mercedes</label>
+        <input type="checkbox" name="car3" id="car3" value="Tesla">
+        <label for="car3">Tesla</label>
+        <br>
+        <!--button-->
+        <input type="button" value="Click Me">
+        <br>
+        <br>
+        <!--password type-->
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" required>
+        <br>
+        <br>
+        <!--color type-->
+        <label for="favcolor">Favorite Color</label>
+        <input type="color" id="favcolor" name="favcolor">
+        </fieldset>
+        <br>
+        <br>
+        <!--file type-->
+        <label for="myphoto">Upload profile photo</label>
+        <input type="file" id="myphoto" name="myphoto" required>
+        <br>
+        <br>
+        <!--email type-->
+        <label for="useremail">Email:</label>
+        <input type="email" id="useremail" name="useremail">
+        <br>
+        <br>
+        <!--Date picker type-->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <br>
+        <!--Hidden input type-->
+        <input type="hidden" id="secretanswer" value="123456">
+        <br>
+        <br>
+<!-- select and option -->
+<p>What brand you may own in the future?</p>
+<select id="cars" name="cars">
+    <option value="bmw">BMW</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat" selected>Fiat</option>
+</select>
         <br>
         <br>
         <input type="submit" value="Send Message">
+        <input type="reset" value="Rest Data">
     </form>
 </body>
+
 </html>
