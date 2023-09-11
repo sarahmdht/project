@@ -1,0 +1,40 @@
+/*element selector*/
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: gray;
+}
+
+/* id selector */
+#position {
+    color: darkmagenta;
+    font-size: 18px;
+}
+
+#intro-para {
+    color: red;
+    font-size: 14px;
+}
+
+/*class selector*/
+.boxed-section {
+    background-color: rgb(50, 70, 200);
+}
+/* style for background image  */
+.with-background {
+    /* 
+    background-image: url("laptop-593673_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+   background-size: 500px 150px;
+    background-size: cover;
+    background-attachment: scroll;
+     */
+background: #000000 url("laptop-593673_1920.jpg") no-repeat fixed center center;
+}
