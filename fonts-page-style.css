@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/fonts/Roboto/Roboto-Regular.ttf),
+    url(assets/fonts/Roboto/Roboto-Bold.ttf),
+    url(assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(assets/fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+p {
+  /*font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-variant: normal;
+    font-size: 28px;
+    line-height: 32px;*/
+  /*line height more than font size*/
+  /* font: 600 28px/34px Georgia, serif;*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 32px;
+}
+
+i {
+  font-size: 50px;
+  color: blueviolet;
+  text-shadow: 2px 2px 5px gray;
+}
+
+
+/* links */
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: red;
+}
+
+button {
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+h1,
+h2 {
+  color: blue;
+}
+
+ul {
+  /* list-style-image: url(assets/images/download.png);
+list-style-position: inside; */
+  list-style-type: none;
+  background-color: #F9F930;
+}
+
+li {
+  background: red;
+}
+
+ol {
+  list-style-type: lower-alpha;
+  background-color: yellow;
+}
+
+/* tables */
+table {
+  border: 1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+th {
+  color: blue;
+}
+
+tr:nth-child(even) {
+  background-color: beige;
+}
+
+tr:hover {
+  background-color: aliceblue;
+}
